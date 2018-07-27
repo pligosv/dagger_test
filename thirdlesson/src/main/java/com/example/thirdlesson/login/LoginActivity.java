@@ -1,5 +1,6 @@
 package com.example.thirdlesson.login;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.Toast;
 import com.example.thirdlesson.App;
 import com.example.thirdlesson.R;
 import com.example.thirdlesson.datatype.Account;
+import com.example.thirdlesson.folders.FolderListActivity;
 
 import javax.inject.Inject;
 
@@ -40,7 +42,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     void showMailForAccount(Account account) {
-        Toast.makeText(this, userEditText.getText().toString() + " " + passwordEditText.getText().toString(), Toast.LENGTH_SHORT).show();
+        App.getInstance().createMailComponent(account);
+        startActivity(new Intent(this, FolderListActivity.class));
     }
 
     @Inject
