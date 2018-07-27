@@ -17,7 +17,7 @@ public class PandaModule {
 
     @Named("female")
     @Provides
-    Panda providePandeFemale() {
+    Panda providePandaFemale() {
         return new Panda("Панда девочка");
     }
 }
