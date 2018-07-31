@@ -19,7 +19,7 @@ public class MailModule {
 
     @Provides
     @MailScope
-    MailManager provideMailmanager(Account account, ApiService apiService) {
+    MailManager provideMailManager(Account account, ApiService apiService) {
         return new MailManager(account, apiService);
     }
 
