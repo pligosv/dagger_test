@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/dagger_test.iml" filepath="$PROJECT_DIR$/dagger_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fifthlesson/fifthlesson.iml" filepath="$PROJECT_DIR$/fifthlesson/fifthlesson.iml" />
       <module fileurl="file://$PROJECT_DIR$/fourthlesson/fourthlesson.iml" filepath="$PROJECT_DIR$/fourthlesson/fourthlesson.iml" />
       <module fileurl="file://$PROJECT_DIR$/secondlesson/secondlesson.iml" filepath="$PROJECT_DIR$/secondlesson/secondlesson.iml" />
       <module fileurl="file://$PROJECT_DIR$/thirdlesson/thirdlesson.iml" filepath="$PROJECT_DIR$/thirdlesson/thirdlesson.iml" />

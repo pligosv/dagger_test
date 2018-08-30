@@ -14,7 +14,7 @@ public class LetterListActivityModule {
 
     @ActivityScope
     @Provides
-    public Folder provideFolder() {return  folder;}
+    public Folder provideFolder() {return folder;}
 
     @ActivityScope
     @Provides

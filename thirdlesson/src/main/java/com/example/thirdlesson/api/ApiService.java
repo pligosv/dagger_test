@@ -1,5 +1,6 @@
 package com.example.thirdlesson.api;
 
+import android.util.Log;
 import com.example.thirdlesson.datatype.Account;
 import com.example.thirdlesson.datatype.Folder;
 import com.example.thirdlesson.datatype.Letter;
@@ -8,6 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ApiService {
+
+    public void log() {
+        Log.d("Api", "log: Api Service");
+    }
 
     public Account login(String user, String password) {
         //some code to get account data from server
