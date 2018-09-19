@@ -12,6 +12,6 @@ public interface BuilderComponent {
     @Component.Builder
     interface MyBuilder {
         BuilderComponent letsBuildThisComponent();
-        BuilderComponent.MyBuilder methodForSettingAppModule(AppModule appModule);
+        MyBuilder methodForSettingAppModule(AppModule appModule);
     }
 }

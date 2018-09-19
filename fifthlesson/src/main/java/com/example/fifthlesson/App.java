@@ -8,6 +8,7 @@ import com.example.fifthlesson.module.SuperModule;
 
 public class App extends Application {
 
+    private static FirstAppComponent firstComponent;
     private static AppComponent component;
     private static BuilderComponent builderComponent;
     private static SuperComponent superComponent;
@@ -15,6 +16,12 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        //Take a look what inside
+        FirstAppComponent firstAppComponent = DaggerFirstAppComponent.create();
+
+//        Np such method because we have to create module and pass it
+//        AppComponent appComponent = DaggerAppComponent.create();
 
         // We have to create SomeObject to pass it to AppModule and pass it to builder
         SomeObject someObject = new SomeObject();
